@@ -1,8 +1,15 @@
 <script setup lang="ts">
 import Button from "./Button.vue";
 
+export interface Post {
+  title: string
+  date: string
+  description: string
+  slug: string
+}
+
 export interface Props {
-  post: object
+  post: Post
 }
 
 const props = defineProps<Props>()

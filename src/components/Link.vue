@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <a v-if="external" class="link" target="_blank" rel="noopener nofollow" :href="target">
+  <a v-if="external && typeof target === 'string'" class="link" target="_blank" rel="noopener nofollow" :href="target">
     <slot></slot>
   </a>
   <router-link v-else class="link" :to="target">
