@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300|Open+Sans:300,300i');
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-gray: #777777;
+  --color-blue: #00aeed;
+  --color-dark-blue: #0076a1;
+  --color-light-blue-gray: #cdd1d2;
+  --color-dark-blue-gray: #001821;
+
+  --color-accent: var(--color-blue);
+  --color-accent-hover: var(--color-dark-blue);
+  --color-background: var(--color-light-blue-gray);
+
+  --font-family-yanone-kaffeesatz: 'Yanone Kaffeesatz', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-heading: var(--font-family-yanone-kaffeesatz);
+  --font-family-button: var(--font-family-yanone-kaffeesatz);
+  --font-family-link: var(--font-family-yanone-kaffeesatz);
+  --font-family-body: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-weight: 200;
+  --font-color: var(--color-dark-blue-gray);
+  --font-color-muted: var(--color-dark-gray);
+
+  --font-size-1-x: 1rem;
+  --font-size-1-5-x: 1.5rem;
+  --font-size-2-x: 2rem;
+  --font-size-3-x: 3rem;
+  --font-size-4-x: 4rem;
+  --font-size-small: var(--font-size-1-x);
+  --font-size-base: var(--font-size-1-5-x);
+
+  --spacing-0-5-x: 0.5rem;
+  --spacing-1-0-x: 1rem;
+  --spacing-1-5-x: 1.5rem;
+  --spacing-2-0-x: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin-top: 0;
+  background: var(--color-background);
+  color: var(--font-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight);
+  font-family: var(--font-family-body);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight);
+  line-height: 1.1;
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-4-x);
+  margin-bottom: var(--spacing-2-0-x);
+}
+
+h2 {
+  font-size: var(--font-size-3-x);
+  margin-bottom: var(--spacing-1-5-x);
+}
+
+h3 {
+  font-size: var(--font-size-2-x);
+  margin-bottom: var(--spacing-1-0-x);
+}
+
+h4 {
+  font-size: var(--font-size-1-5-x);
+  margin-bottom: var(--spacing-0-5-x);
+}
+
+::selection {
+  background: var(--color-accent);
+}
+
+* + * {
+  margin-top: var(--spacing-1-5-x);
+}
+
+p {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+small {
+  font-size: var(--font-size-small);
+}
