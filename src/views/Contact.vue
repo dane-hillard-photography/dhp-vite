@@ -29,7 +29,7 @@ useHead({
 
   <div class="form">
     <div />
-    <form name="contact" netlify netlify-honeypot="pwned" action="/thanks" method="POST">
+    <form name="contact" netlify netlify-honeypot="pwned" action="/thanks/" method="POST">
       <label class="form__label" for="first_name">First name</label>
       <input class="form__control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
   
