@@ -72,5 +72,6 @@ useHead({
 .portrait__image {
   grid-column: 2;
   max-width: 100%;
+  aspect-ratio: 1462 / 2048;
 }
 </style>

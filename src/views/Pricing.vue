@@ -20,7 +20,13 @@ useHead({
 <template>
   <h1>Pricing</h1>
   <h2>Weddings</h2>
-  <img class="feature" src="/Corey-and-Anastasia-Lake-Michigan-wedding.jpg" alt="A close-up portrait of a wedding couple about to kiss" />
+  <img
+    class="feature"
+    src="/Corey-and-Anastasia-Lake-Michigan-wedding.jpg"
+    alt="A close-up portrait of a wedding couple about to kiss"
+    height="534"
+    width="800"
+  />
   <p>
     Weddings are typically the culmination of months of logistics and stress. An ideal wedding day is the opportunity
     to reap the benefits of all that careful planning. One way to make this easier is to simplify the photography
@@ -32,7 +38,13 @@ useHead({
   </p>
 
   <h2>Engagements</h2>
-  <img class="feature" src="/Vincent-and-Daisy-engagement-Law-Quad.jpg" alt="A newly engaged couple smiling together" />
+  <img
+    class="feature"
+    src="/Vincent-and-Daisy-engagement-Law-Quad.jpg"
+    alt="A newly engaged couple smiling together"
+    height="534"
+    width="800"
+  />
   <p>
     Engagement sessions are a great way to make your announcement with a splash. I'm interested in capturing your
     relationship and
@@ -43,7 +55,13 @@ useHead({
   </p>
 
   <h2>Fashion, Lifestyle, and Editorial</h2>
-  <img class="feature" src="/James-Howard-maroon-and-fold-jersey-detail.jpg" alt="An upcycled jersey with sleeve tassels" />
+  <img
+    class="feature"
+    src="/James-Howard-maroon-and-fold-jersey-detail.jpg"
+    alt="An upcycled jersey with sleeve tassels"
+    height="534"
+    width="800"
+  />
   <p>
     I am truly inspired by people who are out there creating things with their hands or innovating.
     Please
