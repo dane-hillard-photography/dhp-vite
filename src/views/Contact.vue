@@ -50,7 +50,6 @@ useHead({
       <label class="form__label" for="Message">Message</label>
       <textarea class="form__control" placeholder="Message *" name="message" id="message" required></textarea>
 
-      <div data-netlify-recaptcha="true" />
       <Button type="submit">Send</Button>
     </form>
     <div />
