@@ -29,7 +29,9 @@ useHead({
 
   <div class="form">
     <div />
-    <form name="contact" netlify netlify-honeypot="pwned" action="/thanks/" method="post">
+    <form name="contact" data-netlify="true" netlify-honeypot="pwned" action="/thanks/" method="post">
+      <input type="hidden" name="form-name" value="contact" />
+
       <label class="form__label" for="first_name">First name</label>
       <input class="form__control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
   
@@ -47,7 +49,7 @@ useHead({
   
       <label class="form__label" for="Message">Message</label>
       <textarea class="form__control" placeholder="Message *" name="message" id="message" required></textarea>
-  
+
       <Button type="submit">Send</Button>
     </form>
     <div />
