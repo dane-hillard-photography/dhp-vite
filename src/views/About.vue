@@ -21,7 +21,7 @@ useHead({
   <h1>About me</h1>
 
   <div class="portrait">
-    <img class="portrait__image" src="/Dane-Hillard-portrait-by-Peter-Ung-Photography.jpg" alt="Portrait of Dane Hillard" />
+    <img class="portrait__image" src="/Dane-Hillard-portrait-by-Peter-Ung-Photography.jpg" alt="Portrait of Dane Hillard" width="1462" />
   </div>
 
   <p>
