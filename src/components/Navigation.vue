@@ -82,6 +82,10 @@
   justify-items: end;
 }
 
+.brand-logo img {
+  aspect-ratio: 500 / 294;
+}
+
 .brand-logo,
 .social-links__link {
   display: inline-block;
