@@ -29,7 +29,7 @@ useHead({
 
   <div class="form">
     <div />
-    <form name="contact" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="pwned" action="/thanks/" method="post">
+    <form name="contact" data-netlify="true" netlify-honeypot="pwned" action="/thanks/" method="post">
       <input type="hidden" name="form-name" value="contact" />
 
       <label class="form__label" for="first_name">First name</label>
