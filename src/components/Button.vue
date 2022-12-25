@@ -4,7 +4,7 @@ import Link from "./Link.vue";
 export interface Props {
   variant?: 'primary' | 'outline'
   target?: string | object
-  type?: string
+  type?: 'submit' | 'reset' | 'button'
 }
 
 const props = withDefaults(defineProps<Props>(), {
