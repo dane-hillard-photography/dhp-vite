@@ -27,31 +27,40 @@ useHead({
     regarding me, my equipment, or what a session with me might be like, please contact me using the form below.
   </p>
 
-  <form netlify netlify-honeypot="pwned">
-    <label class="form-label" for="first_name">First name</label>
-    <input class="form-control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
-
-    <label class="form-label" for="last_name">Last name</label>
-    <input class="form-control" placeholder="Last name *" name="last_name" id="last_name" type="text" required>
-
-    <label class="form-label" for="email">Email</label>
-    <input class="form-control" placeholder="Email *" name="email" id="email" type="email" required>
-
-    <label class="form-label" for="phone">Phone number</label>
-    <input class="form-control" placeholder="Phone" name="phone" id="phone" type="tel" required>
-
-    <label class="form-label" for="Subject">Subject</label>
-    <input class="form-control" placeholder="Subject *" name="subject" id="subject" type="text" required>
-
-    <label class="form-label" for="Message">Message</label>
-    <textarea class="form-control" placeholder="Message *" name="message" id="message" required></textarea>
-
-    <Button type="submit">Send</Button>
-  </form>
+  <div class="form">
+    <div />
+    <form name="contact" netlify netlify-honeypot="pwned" action="/thanks" method="POST">
+      <label class="form__label" for="first_name">First name</label>
+      <input class="form__control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
+  
+      <label class="form__label" for="last_name">Last name</label>
+      <input class="form__control" placeholder="Last name *" name="last_name" id="last_name" type="text" required>
+  
+      <label class="form__label" for="email">Email</label>
+      <input class="form__control" placeholder="Email *" name="email" id="email" type="email" required>
+  
+      <label class="form__label" for="phone">Phone number</label>
+      <input class="form__control" placeholder="Phone" name="phone" id="phone" type="tel" required>
+  
+      <label class="form__label" for="Subject">Subject</label>
+      <input class="form__control" placeholder="Subject *" name="subject" id="subject" type="text" required>
+  
+      <label class="form__label" for="Message">Message</label>
+      <textarea class="form__control" placeholder="Message *" name="message" id="message" required></textarea>
+  
+      <Button type="submit">Send</Button>
+    </form>
+    <div />
+  </div>
 </template>
 
 <style scoped>
-.form-label {
+.form {
+  display: grid;
+  grid-template-columns: auto minmax(250px, 500px) auto;
+}
+
+.form__label {
   position: absolute;
   left: -10000px;
   width: 1px;
@@ -60,14 +69,15 @@ useHead({
   overflow: hidden;
 }
 
-.form-control {
+.form__control {
   display: block;
   border-radius: 2px;
   font-family: var(--font-family-body);
   padding: var(--spacing-0-5-x);
+  width: 100%;
 }
 
-.form-control:focus-visible {
+.form__control:focus-visible {
   outline: 1px solid var(--color-accent);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
