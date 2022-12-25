@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {useHead} from "@vueuse/head"
 import {useRoute} from "vue-router"
+import Button from "../components/Button.vue";
 
 const route = useRoute()
 const pageTitle = 'Contact | Dane Hillard Photography'
@@ -25,7 +26,49 @@ useHead({
     If you are interested in setting up a portrait session or have any questions
     regarding me, my equipment, or what a session with me might be like, please contact me using the form below.
   </p>
+
+  <form netlify netlify-honeypot="pwned">
+    <label class="form-label" for="first_name">First name</label>
+    <input class="form-control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
+
+    <label class="form-label" for="last_name">Last name</label>
+    <input class="form-control" placeholder="Last name *" name="last_name" id="last_name" type="text" required>
+
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" placeholder="Email *" name="email" id="email" type="email" required>
+
+    <label class="form-label" for="phone">Phone number</label>
+    <input class="form-control" placeholder="Phone" name="phone" id="phone" type="tel" required>
+
+    <label class="form-label" for="Subject">Subject</label>
+    <input class="form-control" placeholder="Subject *" name="subject" id="subject" type="text" required>
+
+    <label class="form-label" for="Message">Message</label>
+    <textarea class="form-control" placeholder="Message *" name="message" id="message" required></textarea>
+
+    <Button type="submit">Send</Button>
+  </form>
 </template>
 
 <style scoped>
+.form-label {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.form-control {
+  display: block;
+  border-radius: 2px;
+  font-family: var(--font-family-body);
+  padding: var(--spacing-0-5-x);
+}
+
+.form-control:focus-visible {
+  outline: 1px solid var(--color-accent);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
 </style>

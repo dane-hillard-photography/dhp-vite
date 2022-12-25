@@ -4,10 +4,12 @@ import Link from "./Link.vue";
 export interface Props {
   variant?: 'primary' | 'outline'
   target?: string | object
+  type?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   variant: 'primary',
+  type: 'button',
 })
 </script>
 
@@ -16,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
     <slot></slot>
   </Link>
 
-  <button v-else :class="['button', `button--${variant}`]">
+  <button v-else :class="['button', `button--${variant}`]" :type="type">
     <slot></slot>
   </button>
 </template>
