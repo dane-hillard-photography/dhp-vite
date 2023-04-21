@@ -5,27 +5,8 @@ import {useHead} from "@vueuse/head"
 import PostPreview from "../components/PostPreview.vue"
 import {useRoute} from "vue-router"
 
-const posts = ref([{
-  year: 2015,
-  posts: [{
-    title: 'foo!',
-    subtitle: 'the fooiest',
-    description: 'It is a foo',
-    date: '2015-12-04',
-    slug: 'foo',
-  }],
-}, {
-  year: 2016,
-  posts: [{
-    title: 'bar!',
-    subtitle: 'the barriest',
-    description: 'It is a bar',
-    date: '2016-01-23',
-    slug: 'bar',
-  }],
-}])
-
-const firstThreePosts = ref(posts.value.flatMap((year) => year.posts).slice(0, 3))
+const posts = ref([])
+// const firstThreePosts = ref(posts.value.flatMap((year) => year.posts).slice(0, 3))
 
 const route = useRoute()
 const pageTitle = 'Fashion and lifestyle photography in Philadelphia, Pennsylvania | Dane Hillard Photography'
@@ -45,6 +26,7 @@ useHead({
   <h1>Dane Hillard Photography</h1>
   <h2>Philadelphia, PA, USA</h2>
 
+  <!--
   <section>
     <ol>
       <li v-for="post in firstThreePosts" :key="post.slug">
@@ -53,9 +35,9 @@ useHead({
     </ol>
   </section>
 
-  <section>
+  <section v-if="posts.value">
     <h3>All posts</h3>
-    
+
     <template v-for="year in posts.sort((a, b) => a.year < b.year ? 1 : -1)" :key="year">
       <h4>{{ year.year }}</h4>
       <ol>
@@ -65,6 +47,7 @@ useHead({
       </ol>
     </template>
   </section>
+  -->
 </template>
 
 <style scoped>
