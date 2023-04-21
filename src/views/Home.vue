@@ -6,7 +6,7 @@ import PostPreview from "../components/PostPreview.vue"
 import {useRoute} from "vue-router"
 
 const posts = ref([])
-const firstThreePosts = ref(posts.value.flatMap((year) => year.posts).slice(0, 3))
+// const firstThreePosts = ref(posts.value.flatMap((year) => year.posts).slice(0, 3))
 
 const route = useRoute()
 const pageTitle = 'Fashion and lifestyle photography in Philadelphia, Pennsylvania | Dane Hillard Photography'
@@ -26,6 +26,7 @@ useHead({
   <h1>Dane Hillard Photography</h1>
   <h2>Philadelphia, PA, USA</h2>
 
+  <!--
   <section>
     <ol>
       <li v-for="post in firstThreePosts" :key="post.slug">
@@ -46,6 +47,7 @@ useHead({
       </ol>
     </template>
   </section>
+  -->
 </template>
 
 <style scoped>
