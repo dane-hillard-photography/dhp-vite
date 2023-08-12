@@ -119,7 +119,7 @@
 
 "@unhead/dom@1.2.2":
   version "1.2.2"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/@unhead/dom/-/dom-1.2.2.tgz#b5e8a5d9ab775f85405eee5c2ae9e981de897fcc"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.2.2.tgz#b5e8a5d9ab775f85405eee5c2ae9e981de897fcc"
   integrity sha512-ohganmg4i1Dd4wwQ2A9oLWEkJNpJRoERJNmFgzmScw9Vi3zMqoS4gPIofT20zUR5rhyyAsFojuDPojJ5vKcmqw==
   dependencies:
     "@unhead/schema" "1.2.2"
@@ -142,7 +142,7 @@
 
 "@unhead/schema@1.2.2":
   version "1.2.2"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/@unhead/schema/-/schema-1.2.2.tgz#ae76dd94abfea9671252ad77a0d2773b657acb0f"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.2.2.tgz#ae76dd94abfea9671252ad77a0d2773b657acb0f"
   integrity sha512-cGtNvadL76eGl7QxGjWHZxFqLv9a2VrmRpeEb1d7sm0cvnN0bWngdXDTdUyXzn7RVv/Um+/yae6eiT6A+pyQOw==
   dependencies:
     hookable "^5.5.3"
@@ -150,7 +150,7 @@
 
 "@unhead/shared@1.2.2":
   version "1.2.2"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/@unhead/shared/-/shared-1.2.2.tgz#144ed5dabfbe30659f6494948eb87b02867ac984"
+  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.2.2.tgz#144ed5dabfbe30659f6494948eb87b02867ac984"
   integrity sha512-bWRjRyVzFsunih9GbHctvS8Aenj6KBe5ycql1JE4LawBL/NRYvCYUCPpdK5poVOqjYr0yDAf9m4JGaM2HwpVLw==
   dependencies:
     "@unhead/schema" "1.2.2"
@@ -172,7 +172,7 @@
 
 "@unhead/vue@^1.2.2":
   version "1.2.2"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/@unhead/vue/-/vue-1.2.2.tgz#608d43752efd9c589f9eae8a07625460ff4cedc4"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.2.2.tgz#608d43752efd9c589f9eae8a07625460ff4cedc4"
   integrity sha512-AxOmY5JPn4fS34ovaivPnqg2my+InIkZDNSxCKfRkmbBtstFre/Fyf0d92Qfx0u8PJiSRPOjthEHx5vKDgTEJQ==
   dependencies:
     "@unhead/schema" "1.2.2"
@@ -424,7 +424,7 @@ hookable@^5.4.2:
 
 hookable@^5.5.3:
   version "5.5.3"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
+  resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
   integrity sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==
 
 is-core-module@^2.9.0:
@@ -520,7 +520,7 @@ typescript@^4.9.3:
 
 unhead@1.2.2:
   version "1.2.2"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/unhead/-/unhead-1.2.2.tgz#1dede2c0365bfd95757677514981589f5763d6aa"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.2.2.tgz#1dede2c0365bfd95757677514981589f5763d6aa"
   integrity sha512-9wDuiso7YWNe0BTA5NGsHR0dtqn0YrL/5+NumfuXDxxYykavc6N27pzZxTXiuvVHbod8tFicsxA6pC9WhQvzqg==
   dependencies:
     "@unhead/dom" "1.2.2"
@@ -542,7 +542,7 @@ vite@^4.0.0:
 
 vue-gtag@^2.0.1:
   version "2.0.1"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/vue-gtag/-/vue-gtag-2.0.1.tgz#d4dc1b9cf79809c37ce844824c0f7fa97af520dd"
+  resolved "https://registry.yarnpkg.com/vue-gtag/-/vue-gtag-2.0.1.tgz#d4dc1b9cf79809c37ce844824c0f7fa97af520dd"
   integrity sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==
 
 vue-router@^4.1.6:
@@ -581,5 +581,5 @@ vue@^3.2.45:
 
 zhead@^2.0.10:
   version "2.0.10"
-  resolved "https://artifactory.acorn.cirrostratus.org/artifactory/api/npm/npms/zhead/-/zhead-2.0.10.tgz#dc89c420081fae78a6f3d10687428ae676bc6291"
+  resolved "https://registry.yarnpkg.com/zhead/-/zhead-2.0.10.tgz#dc89c420081fae78a6f3d10687428ae676bc6291"
   integrity sha512-irug8fXNKjqazkA27cFQs7C6/ZD3qNiEzLC56kDyzQART/Z9GMGfg8h2i6fb9c8ZWnIx/QgOgFJxK3A/CYHG0g==
