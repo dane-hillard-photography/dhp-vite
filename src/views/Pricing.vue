@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import Link from "../components/Link.vue"
-import {useHead} from "@vueuse/head"
+import {useHead} from "@unhead/vue"
 import {useRoute} from "vue-router"
+
+import Link from "../components/Link.vue"
 
 const route = useRoute()
 const pageTitle = 'Pricing | Dane Hillard Photography'

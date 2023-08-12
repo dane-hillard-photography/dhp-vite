@@ -1,6 +1,7 @@
 import {createApp} from 'vue'
 import {createRouter, createWebHistory} from 'vue-router'
-import {createHead} from "@vueuse/head"
+import {createHead} from '@unhead/vue'
+import VueGtag from 'vue-gtag'
 
 import './style.css'
 import App from './App.vue'
@@ -28,8 +29,13 @@ const router = createRouter({
 })
 
 const head = createHead()
-
 const app = createApp(App)
+
+app.use(VueGtag, {
+  config: {
+    id: 'G-WMVGYG6BH1'
+  }
+})
 app.use(router)
 app.use(head)
 app.mount('#app')
