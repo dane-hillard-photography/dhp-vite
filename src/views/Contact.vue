@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useHead} from "@vueuse/head"
+import {useHead} from "@unhead/vue"
 import {useRoute} from "vue-router"
 import Button from "../components/Button.vue";
 
@@ -34,19 +34,19 @@ useHead({
 
       <label class="form__label" for="first_name">First name</label>
       <input class="form__control" placeholder="First name *" name="first_name" id="first_name" type="text" required>
-  
+
       <label class="form__label" for="last_name">Last name</label>
       <input class="form__control" placeholder="Last name *" name="last_name" id="last_name" type="text" required>
-  
+
       <label class="form__label" for="email">Email</label>
       <input class="form__control" placeholder="Email *" name="email" id="email" type="email" required>
-  
+
       <label class="form__label" for="phone">Phone number</label>
       <input class="form__control" placeholder="Phone" name="phone" id="phone" type="tel" required>
-  
+
       <label class="form__label" for="Subject">Subject</label>
       <input class="form__control" placeholder="Subject *" name="subject" id="subject" type="text" required>
-  
+
       <label class="form__label" for="Message">Message</label>
       <textarea class="form__control" placeholder="Message *" name="message" id="message" required></textarea>
 

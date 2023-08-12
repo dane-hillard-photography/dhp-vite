@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import {ref} from "vue"
-import Link from "../components/Link.vue"
-import {useHead} from "@vueuse/head"
-import PostPreview from "../components/PostPreview.vue"
+import {useHead} from "@unhead/vue"
 import {useRoute} from "vue-router"
+
+import Link from "../components/Link.vue"
+import PostPreview from "../components/PostPreview.vue"
 
 const posts = ref([])
 // const firstThreePosts = ref(posts.value.flatMap((year) => year.posts).slice(0, 3))
